@@ -1,0 +1,95 @@
+<!--start for each loop-->
+{{#each data}}
+<!--start for each loop-->
+
+
+<div class="jumbotron-fluid">
+<div class="col-12">
+    <img src="images/{{Header}}" style="width: 100%">
+</div>
+</div>
+
+
+
+    <div class="col-12">
+        <h5 class="wow fadeInDown">hi,</h5>
+    </div>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm-12 col-md-6">
+    <p id="aboutMeDesc" class="wow fadeInDown">{{subHeader}}</p>    </div>
+    <div class="col-sm-12 col-md-6">
+        <center>
+       <img src="images/headshotIcon.png" class="headShot wow fadeInDown">
+       </center>
+    </div>
+
+
+
+<div class="row">
+    <div class="col-12" id="proficientText">
+        <h4 class="wow fadeInDown">Proficient In</h4>
+    </div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 col-md-3 wow flipInX">
+            <p><img src="images/{{icon_ps}}"></p>
+        </div>
+
+        <div class="col-sm-6 col-md-3 wow flipInX">
+            <p><img src="images/{{icon_ai}}">
+</p>
+        </div>
+        <div class="col-sm-6 col-md-3 wow flipInX">
+            <p><img src="images/{{icon_id}}">
+</p>
+        </div>
+        <div class="col-sm-6 col-md-3 wow flipInX">
+            <p><img src="images/{{icon_xd}}">
+</p>
+        </div>
+        <div class="col-sm-6 col-md-3 wow flipInX">
+            <p><img src="images/{{icon_ae}}">
+</p>
+        </div>
+        <div class="col-sm-6 col-md-3 wow flipInX">
+            <p><img src="images/{{icon_pr}}">
+</p>
+        </div>
+        
+        <div class="col-sm-6 col-md-3 wow flipInX">
+            <p><img src="images/{{icon_lr}}"></p>
+        </div>
+
+        <div class="col-sm-6 col-md-3 wow flipInX">
+            <p><img src="images/{{icon_c4d}}">
+</p>
+        </div>
+
+        <div class="col-12 text-center wow flipInX">
+            <p><img src="images/{{icon_html5}}">
+            <img src="images/{{icon_css3}}">
+            <img src="images/{{icon_js}}"></p>
+        </div>
+
+</div>
+
+<div class="col-sm-12 col-md-12 col-lg-12" id="videoSection">
+    <video class="video-fluid" controls> 
+        <source src="video/{{videoMP4}}" type="video/mp4"> 
+        <source src="video/{{videoOGG}}" type="video/ogg">
+        <source src="video/{{videoWEBM}}" type="video/webm">
+    </video>
+    </div>
+</div>
+
+
+
+<!--end for each loop-->
+{{/each}}
+<!--end for each loop-->
+

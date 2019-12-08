@@ -1,0 +1,64 @@
+<!-- loop through all portfolio items -->
+<!--this is like a forEach loop with plain JS-->
+
+
+<section class="pb-3">
+
+    <!--Section heading-->
+
+    <div class="jumbotron fluid">
+        <div class="col-sm-12 col-md-12 wow fadeInDown">
+        <p class="portfolioDesc">Below are a highlight of my favourite personal, academic, and internship related design jobs I've done over the years. Each piece carries its own sentimental meaning and learning process.</p>
+    </div>
+     </div>
+
+
+    <!--Grid row-->
+    <div class="row">{{#each data}}
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4">
+
+            <!-- Card -->
+            <div class="card card-image" style="background-image: url('images/{{thumbnail}}'); background-repeat: repeat;
+  background-size: auto;">
+
+                <!--View card-->
+                <div class="text-white text-center pricing-card d-flex align-items-center rgba-stylish-strong py-3 px-3">
+
+                    <!--Content-->
+                    <div class="card-body">
+                        
+                        <div class="price pt-0">
+                            <h1 class="portfolioHeader">{{Header}}</h1>
+                        </div>
+                        <p>{{subHeader}}</p>
+                            
+                        <a href="{{Id}}" class="viewItem btn btn-outline-white">View</a>
+                    </div>
+
+                </div>
+                <!--Pricing card-->
+            </div>
+        </div>
+        <!--Grid column-->
+
+
+{{/each}}
+    </div>
+
+    <!--Grid row-->
+
+</section>
+
+
+<!-- this will be filled in on the client side 
+    when we render our AJAX data -->
+<div class="jumbotron LightBox">
+    <span class="close">x</span>
+
+    <div class="lightbox-content">
+
+    </div>
+
+
+</div>

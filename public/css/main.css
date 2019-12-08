@@ -1,0 +1,164 @@
+.LightBox {
+  display: none;
+  top: 0em;
+  right: 0em;
+  bottom: 0em;
+  left: 0em;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 4;
+  position: fixed;
+  overflow-y: scroll; }
+  .LightBox .lightbox-content img {
+    width: 100% !important;
+    max-width: 500px; }
+  .LightBox .close {
+    right: 24px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    position: fixed;
+    border: thin solid white;
+    padding: 2px 14px 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.25); }
+  .LightBox .close:hover {
+    background-color: red;
+    opacity: .2; }
+
+.show-lb {
+  display: -webkit-box !important;
+  display: flex !important; }
+
+body .error-page {
+  text-decoration: underline;
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  margin-top: 40px; }
+
+.error-section pre {
+  font-size: 30px;
+  text-decoration: none;
+  text-align: center; }
+
+.hidden {
+  display: none; }
+
+.box-model {
+  background-color: #ccc;
+  padding: 2rem 0 2rem .5rem; }
+
+.navbar {
+  box-shadow: none !important; }
+
+#name {
+  color: #383838; }
+
+.mainLogo {
+  height: 10em; }
+
+h1 {
+  font-family: 'Prata', serif;
+  font-size: 2em;
+  text-align: center;
+  margin: auto;
+  padding-top: 15px; }
+
+h2 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 15px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 2em; }
+
+h3 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 3em;
+  text-align: center; }
+
+h4 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 3em;
+  text-align: center; }
+
+h5 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 10em;
+  text-align: center; }
+
+#aboutMeDesc {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+p {
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Inconsolata', monospace; }
+
+.proficiency {
+  font-size: 2em !important;
+  text-align: center !important;
+  margin: auto !important; }
+
+.mainLogo {
+  height: 10em;
+  margin: auto; }
+
+.footerLogo {
+  height: 8em;
+  margin: auto; }
+
+.headShot {
+  width: 50%;
+  float: center; }
+
+.portfolioDesc {
+  font-size: 1.5em;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.portfolioHeader {
+  font-family: 'Inconsolata', monospace; }
+
+#videoSection {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+#proficientText {
+  margin-top: 60px;
+  margin-bottom: 20px; }
+
+label {
+  font-family: 'Inconsolata', monospace; }
+
+#errorGif {
+  margin: auto;
+  display: block; }
+
+@media (min-width: 992px) {
+  #aboutMeDesc {
+    text-align: left; } }
+
+@media (min-width: 1200px) {
+  #aboutMeDesc {
+    text-align: left; } }
+
+form label {
+  display: block;
+  padding: 5px 0; }
+
+form input {
+  margin-bottom: 15px; }
+
+.submit-button {
+  display: block;
+  margin-top: 10px;
+  background-color: blue;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 8px;
+  border-style: none;
+  cursor: pointer; }
