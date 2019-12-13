@@ -15,13 +15,13 @@ const transporter = mailer.createTransport({
 
 //home/about/index page
 router.get('/', (req, res) => {
-    const connect = require('../utils/sqlConnect');
+    const connect = require('../utils/sql.js');
 
     // get the connection via the connection pool, and then run the query -> just one added step
     connect.getConnection((err, connection) => {
 		if (err) { return console.log(error.message); }
 
-		let query = `SELECT * FROM tbl_aboutMe`;
+		let query = "SELECT * FROM tbl_aboutMe";
 
 		connect.query(query, (err, rows) => {
 			connection.release(); // send this connection back to the pool
@@ -50,7 +50,6 @@ router.get('/', (req, res) => {
             data: result
         });
     })
-})
 
 
 
