@@ -11,3 +11,5 @@ To view this site, follow these steps!
 3. run npm start to view on your localhost:3000
 
 4. run a gulp compile to compile the site
+
+5. Enjoy!

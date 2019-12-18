@@ -4,4 +4,4 @@ const mailcreds = {
     pass: 'Emanuel2008~' // see above
 }
 
-module.exports = mailcreds;
+module.exports = mailcreds; 

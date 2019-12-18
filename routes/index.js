@@ -15,29 +15,6 @@ const transporter = mailer.createTransport({
 
 //home/about/index page
 router.get('/', (req, res) => {
-    const connect = require('../utils/sql.js');
-
-    // get the connection via the connection pool, and then run the query -> just one added step
-    connect.getConnection((err, connection) => {
-		if (err) { return console.log(error.message); }
-
-		let query = "SELECT * FROM tbl_aboutMe";
-
-		connect.query(query, (err, rows) => {
-			connection.release(); // send this connection back to the pool
-
-			if (err) {
-				// will exit the function and log the error
-				return console.log(err.message);
-			}
-
-			console.log(rows); // this should be your database query result
-
-			// render our page
-			res.render('/', {data: rows}); // whatever page and data you're rendering
-		});
-	});
-})
 
     let query = "SELECT * FROM tbl_aboutMe";
 
@@ -50,8 +27,7 @@ router.get('/', (req, res) => {
             data: result
         });
     })
-
-
+})
 
 
 //portfolio projects page
@@ -120,4 +96,4 @@ router.post('/mail', (req, res) => {
 
 
 //this always stays at the bottom
-module.exports = router;
+module.exports = router; 

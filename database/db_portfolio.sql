@@ -86,13 +86,10 @@ INSERT INTO `tbl_projectDetails` (`Id`, `projectImage`, `projectTitle`, `project
 (10, 'item10.jpg', 'Moon Time Sisters Indigenous Charity Organization Poster', 'Event Marketing Graphic Design', 'Contacted by Moon Time Sisters to redesign their outdated logo and help advertise fundraisers on Western University\'s campus for Indigenous women on reserves who do not have accessible feminine hygiene products. One of my favourite projects to work on because it helped make a difference.'),
 (11, 'item11.png', 'Team Meeting Advertising', 'Graphic Design', 'A quick but colourful graphic to remind exec and general members to attend weekly meetings.'),
 (12, 'item12.png', 'Alterna Sticker Campaign', 'Sticker Design', 'Making a Credit Union sticker look cool is difficult. I like to think I made it work. Hopefully. ');
-
 -- --------------------------------------------------------
-
 --
 -- Table structure for table `tbl_projectList`
 --
-
 CREATE TABLE `tbl_projectList` (
   `Id` tinyint(10) NOT NULL,
   `Header` varchar(100) NOT NULL,
@@ -100,11 +97,9 @@ CREATE TABLE `tbl_projectList` (
   `thumbnail` varchar(100) NOT NULL,
   `portfolioDesc` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
 --
 -- Dumping data for table `tbl_projectList`
 --
-
 INSERT INTO `tbl_projectList` (`Id`, `Header`, `subHeader`, `thumbnail`, `portfolioDesc`) VALUES
 (1, 'Alterna Savings Campaign Poster', 'Graphic Design', 'gallery_tile1.jpg', ''),
 (2, 'FIMSSC Prof Event Graphic', 'Promotional Marketing', 'gallery_tile2.jpg', ''),
@@ -118,51 +113,42 @@ INSERT INTO `tbl_projectList` (`Id`, `Header`, `subHeader`, `thumbnail`, `portfo
 (10, 'Moon Time Sisters Charity Poster', 'Charity Organization Outreach Graphic', 'gallery_tile10.jpg', ''),
 (11, 'Meeting Advertising ', 'Graphic Design', 'gallery_tile11.jpg', ''),
 (12, 'Alterna Savings 4% Sticker Campaign', 'Sticker Design', 'gallery_tile12.jpg', '');
-
 --
 -- Indexes for dumped tables
 --
-
 --
 -- Indexes for table `tbl_aboutMe`
 --
 ALTER TABLE `tbl_aboutMe`
   ADD PRIMARY KEY (`Id`);
-
 --
 -- Indexes for table `tbl_projectDetails`
 --
 ALTER TABLE `tbl_projectDetails`
   ADD PRIMARY KEY (`Id`);
-
 --
 -- Indexes for table `tbl_projectList`
 --
 ALTER TABLE `tbl_projectList`
   ADD PRIMARY KEY (`Id`);
-
 --
 -- AUTO_INCREMENT for dumped tables
 --
-
 --
 -- AUTO_INCREMENT for table `tbl_aboutMe`
 --
 ALTER TABLE `tbl_aboutMe`
   MODIFY `Id` tinyint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT for table `tbl_projectDetails`
 --
 ALTER TABLE `tbl_projectDetails`
   MODIFY `Id` tinyint(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
-
 --
 -- AUTO_INCREMENT for table `tbl_projectList`
 --
 ALTER TABLE `tbl_projectList`
   MODIFY `Id` tinyint(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
